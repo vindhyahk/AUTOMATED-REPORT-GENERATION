@@ -1,0 +1,26 @@
+import pandas as pd
+import numpy as np
+
+# Create simple sample data for testing
+def create_sample_data(filename='sample_data.csv', rows=50):
+    """Create a simple CSV file with sample data for testing"""
+    
+    # Create some random data
+    data = {
+        'ID': range(1, rows + 1),
+        'Age': np.random.randint(18, 65, rows),
+        'Salary': np.random.randint(30000, 100000, rows),
+        'Department': np.random.choice(['HR', 'Sales', 'IT', 'Marketing'], rows),
+        'Years': np.random.randint(1, 20, rows)
+    }
+    
+    # Create DataFrame and save to CSV
+    df = pd.DataFrame(data)
+    df.to_csv(filename, index=False)
+    print(f"Sample data saved to {filename}")
+    return filename
+
+if __name__ == "__main__":
+    # Create sample data
+    create_sample_data()
+    print("Now run the report generator script to create a PDF report.")
