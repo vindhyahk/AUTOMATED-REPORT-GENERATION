@@ -12,8 +12,11 @@ DURATION: 4 WEEKS
 
 MENTOR: NEELA SANTOSH
 
+OUTPUT: 
 
-Data Analysis and PDF Report Generator:
+
+
+# Data Analysis and PDF Report Generator:
 
 A simple Python tool to analyze data from CSV files and generate formatted PDF reports with basic statistics and visualizations.
 
